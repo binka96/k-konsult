@@ -15,7 +15,7 @@ import com.k_konsult.Dto.UserPasswordDto;
 import com.k_konsult.Service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 @Controller
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://k-konsult.bg")
 @RequestMapping(path = "/K-Konsult/User")
 public class UserController {
 

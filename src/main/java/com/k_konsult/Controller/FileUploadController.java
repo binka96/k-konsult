@@ -22,7 +22,7 @@ import java.util.Map;
 
 @RestController
 @Controller
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://k-konsult.bg")
 @RequestMapping(path = "/K-Konsult/file")
 public class FileUploadController {
 

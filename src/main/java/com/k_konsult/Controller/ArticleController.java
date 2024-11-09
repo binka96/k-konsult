@@ -19,7 +19,7 @@ import com.k_konsult.Dto.ArticleDto;
 import com.k_konsult.Service.ArticleService;
 
 @Controller
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://k-konsult.bg")
 @RequestMapping(path = "/K-Konsult/Article")
 public class ArticleController {
 

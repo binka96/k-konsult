@@ -21,7 +21,7 @@ import com.k_konsult.Dto.PropertyInfoDto;
 import com.k_konsult.Service.PropertyService;
 
 @Controller
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://k-konsult.bg")
 @RequestMapping(path = "/K-Konsult/Property")
 public class PropertyController {
 

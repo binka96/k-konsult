@@ -18,7 +18,7 @@ import com.k_konsult.Dto.InquiryDto;
 import com.k_konsult.Service.InquiryService;
 
 @Controller
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://k-konsult.bg")
 @RequestMapping(path = "/K-Konsult/Inquiry")
 public class InquiryController {
     
