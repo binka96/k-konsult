@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -28,6 +29,7 @@ public class Property {
     private String construction;
     private String typeOfConstruction;
     private String akt;
+    @Lob
     private String description;
     private int yearOfConstruction; 
     private int floar;

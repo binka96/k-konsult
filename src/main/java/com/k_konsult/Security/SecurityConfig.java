@@ -20,7 +20,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http , JWTAuthenticationFilter jwtAuthenticationFilter) throws Exception {
-        http
+        http.cors().and()
             .csrf().disable()
             .sessionManagement().sessionCreationPolicy(STATELESS)
    
@@ -30,6 +30,8 @@ public class SecurityConfig {
                                         "/K-Konsult/Property/Get/**" , 
                                         "/K-Konsult/Inquiry/Get/**" , 
                                         "/K-Konsult/file/Get/**" , 
+                                        "/K-Konsult/file/upload/**",
+                                        "/K-Konsult/Place/**",
                                         "/K-Konsult/Article/Get/**").permitAll()
             .anyRequest().authenticated().and().addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
